@@ -1,0 +1,67 @@
+.banner {
+  height: 750px;
+  background: #a68cf1;
+  // position: relative;
+  .background {
+    // background-image: url("../../images/proBack.png");
+    // display: inline-block;
+    height: 700px;
+    // width: 55%;
+    position: absolute;
+    right: 320px;
+    top: 0;
+    z-index: 5;
+  }
+  .description {
+    position: relative;
+    top: 150px;
+    left: 282px;
+    width: 700px;
+    padding: 8px;
+    .main {
+      font-weight: 700;
+      font-size: 52px;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+    .inner {
+      p {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        word-spacing: 3px;
+        line-height: 2;
+      }
+    }
+    .search-product-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 16px;
+      padding: 12px;
+      .product-detail {
+        position: relative;
+        padding: 12px;
+        h5 {
+          margin: 0;
+          color: #9f9f9f;
+          padding-bottom: 5px;
+        }
+        h4 {
+          color: #1c252c;
+          margin: 0;
+        }
+      }
+      .product-detail::after {
+        content: "";
+        position: absolute;
+        right: -24px;
+        top: 20px;
+        width: 1px;
+        height: 34px;
+        background: #d3d3d3;
+      }
+    }
+  }
+}
