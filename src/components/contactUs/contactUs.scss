@@ -1,0 +1,52 @@
+.contactUs {
+  height: 380px;
+  position: relative;
+  z-index: 2;
+  .container {
+    margin: auto;
+    background: url("../../images/contactUsBg.png") #a68cf1;
+    width: 65%;
+    height: 380px;
+    padding: 3rem;
+    position: relative;
+    bottom: -4.6rem;
+    border-radius: 2rem;
+    img {
+      position: absolute;
+    }
+    .image_1 {
+      top: -8rem;
+      left: -6rem;
+      width: 28%;
+    }
+    .image_2 {
+      bottom: -3rem;
+      right: -5rem;
+      width: 27%;
+    }
+    .instrument {
+      margin: 1rem;
+      .description {
+        width: 70%;
+        // height: 100px;
+        margin: auto;
+        text-align: center;
+        h3 {
+          margin: 1.8rem 1rem 1rem 1rem;
+          font-size: 2.2rem;
+          font-weight: 700;
+          word-spacing: 1.5px;
+          letter-spacing: 0.5px;
+        }
+        p {
+          padding: 0 1.3rem;
+          word-spacing: 1px;
+          line-height: 1.8;
+          font-size: smaller;
+          opacity: 0.6;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

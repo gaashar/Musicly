@@ -1,0 +1,86 @@
+.studio {
+  height: 850px;
+  background: #1c252c;
+  position: relative;
+  margin: auto;
+  .proback {
+    height: 850px;
+    width: 80%;
+    position: relative;
+    left: 8%;
+    z-index: 1;
+  }
+  .container {
+    position: absolute;
+    text-align: center;
+    top: 4rem;
+    left: 15rem;
+    z-index: 3;
+    height: 1500px;
+    .title {
+      h2 {
+        font-weight: 700;
+        font-size: 3.2rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+      .highlight {
+        color: #a68cf1;
+      }
+      .details {
+        width: 50%;
+        margin: auto;
+        color: #9f9f9f;
+        word-spacing: 1.5px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+        font-size: smaller;
+        // padding: 0 5rem;
+      }
+    }
+    .map-section {
+      position: relative;
+      .mapBg {
+        width: 90%;
+      }
+      .arrow1 {
+        position: absolute;
+        top: 5.8rem;
+        right: 35%;
+        width: 14%;
+      }
+      .arrow2 {
+        position: absolute;
+        top: -4rem;
+        left: 16.8rem;
+      }
+      .map-card {
+        position: absolute;
+        width: 236px;
+        background: #fff;
+        color: #1c252c;
+        font-size: smaller;
+        padding: 0.8rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        h4 {
+          margin-bottom: 0;
+        }
+        .studio-image {
+          width: 210px;
+        }
+      }
+      .card-position_1 {
+        top: 5.8rem;
+        left: 10.2rem;
+      }
+      .card-position_2 {
+        top: 2.9rem;
+        right: 11.8rem;
+      }
+    }
+  }
+}

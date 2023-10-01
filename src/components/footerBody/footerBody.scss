@@ -1,0 +1,123 @@
+.reachout {
+  height: 420px;
+  background: #1c252c;
+  position: relative;
+  bottom: 0;
+  .bgImage {
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+  .container {
+    width: 65%;
+    margin: auto;
+    padding-top: 9rem;
+    z-index: 1;
+    .contact-details {
+      display: flex;
+      height: 200px;
+      .brand {
+        flex-grow: 2;
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        img {
+          width: 2.2rem;
+          height: 1.8rem;
+        }
+        h4 {
+          padding-left: 0.6rem;
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+      .contact {
+        flex-grow: 3;
+        display: flex;
+        flex-flow: row wrap;
+        width: 350px;
+        .phone {
+          flex-grow: 1;
+        }
+        .phone,
+        .email,
+        .studio-address {
+          display: flex;
+          img {
+            width: 1.4rem;
+            height: 1.4rem;
+          }
+          .info {
+            padding-left: 1rem;
+            h5 {
+              margin: 0;
+              padding-bottom: 0.6rem;
+              font-weight: 700;
+            }
+            p {
+              margin: 0;
+              font-weight: 400;
+              font-size: 0.8rem;
+              color: #9f9f9f;
+              padding-bottom: 0.7rem;
+            }
+          }
+        }
+        .email {
+          flex-grow: 1;
+        }
+        .studio-address {
+          flex-grow: 3;
+        }
+      }
+      .social-media {
+        flex-grow: 1;
+        display: flex;
+        height: 2.6rem;
+        justify-content: space-around;
+        .discord,
+        .facebook,
+        .twitter,
+        .instagram {
+          background: #fff;
+          padding: 0.6rem;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .discord:hover,
+        .facebook:hover,
+        .twitter:hover,
+        .instagram:hover {
+          box-shadow: 0 16px 25px 0 rgba(255, 255, 255, 0.913);
+        }
+      }
+    }
+    .copyright-content::before {
+      height: 0.3rem;
+      border: 0.3rem solid #9f9f9f;
+    }
+    .copyright-content {
+      height: 4.7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 0.07rem solid hsla(0, 0%, 100%, 0.1);
+      font-size: 0.8rem;
+      color: #9f9f9f;
+      font-weight: 600;
+      .policy-content {
+        display: flex;
+        justify-content: space-around;
+        width: 280px;
+        font-size: 0.8rem;
+        color: #9f9f9f;
+        font-weight: 600;
+        .policy {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

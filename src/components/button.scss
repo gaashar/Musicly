@@ -7,10 +7,41 @@
   border: 0;
   border-radius: 8px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 10px 30px 0 rgba(28, 37, 44, 0.5);
 }
 
 .search {
   width: 95px;
   height: 45px;
   margin-right: 8px;
+}
+
+.seeMore {
+  border: solid 2px #1c252c;
+  border-radius: 30px;
+  background: #fff;
+  width: 230px;
+  height: 54px;
+  color: #1c252c;
+  margin: 24px 20px;
+}
+
+.getDirection {
+  width: 210px;
+  height: 3rem;
+  font-size: 1.06rem;
+}
+
+.seeMore:hover {
+  background: #1c252c;
+  color: #fff;
+}
+
+.contactUsBtn {
+  width: 128px;
+  height: 43px;
 }

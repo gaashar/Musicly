@@ -1,0 +1,62 @@
+.collections {
+  height: 700px;
+  width: 82rem;
+  margin: auto;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    margin: 16px;
+    .title {
+      width: 25rem;
+      height: 12rem;
+      font-weight: 700;
+      font-size: 3.2rem;
+      color: #1c252c;
+      position: relative;
+      .highlight {
+        color: #a68cf1;
+      }
+      .underline {
+        position: absolute;
+        top: 8rem;
+        left: 0;
+      }
+    }
+    .description {
+      width: 50%;
+      color: #9f9f9f;
+      // padding: 0 4.5rem;
+      word-spacing: 1.5px;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      margin-bottom: 4.5rem;
+      font-weight: 500;
+      position: relative;
+    }
+  }
+  .instruments {
+    display: flex;
+    justify-content: space-between;
+    .instrument {
+      margin: 1.5rem;
+      box-shadow: 50px 40px 200px 0 rgb(0 0 0 / 10%);
+      width: 450px;
+      height: 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      img {
+        width: 180px;
+        height: 220px;
+      }
+    }
+    .instrument:hover {
+      background: url("../../images/proBack_02.png") #a68cf1;
+      img {
+        width: 220px;
+        height: 268px;
+      }
+    }
+  }
+}
