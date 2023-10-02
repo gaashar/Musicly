@@ -1,11 +1,11 @@
 .collections {
-  height: 700px;
-  width: 82rem;
+  width: 80%;
   margin: auto;
   .container {
     display: flex;
     align-items: flex-start;
-    margin: 16px;
+    margin: 1rem auto;
+    justify-content: space-around;
     .title {
       width: 25rem;
       height: 12rem;
@@ -37,26 +37,26 @@
   .instruments {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
     .instrument {
-      margin: 1.5rem;
-      box-shadow: 50px 40px 200px 0 rgb(0 0 0 / 10%);
-      width: 450px;
-      height: 380px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin: auto;
+      margin-left: 1rem;
+      box-shadow: 50px 40px 200px 0 rgba(0, 0, 0, 0.1);
+      padding: 2rem;
       border-radius: 20px;
+      min-height: 25rem;
       img {
-        width: 180px;
-        height: 220px;
+        max-width: 14rem;
       }
     }
     .instrument:hover {
       background: url("../../images/proBack_02.png") #a68cf1;
-      img {
-        width: 220px;
-        height: 268px;
-      }
+      object-fit: cover;
+    }
+    .instrument:nth-child(even) {
+      margin-bottom: 8rem;
     }
   }
 }

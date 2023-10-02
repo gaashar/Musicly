@@ -12,6 +12,7 @@ export const Header = () => {
             <img
               className="logo-image"
               src={require("../../images/logo.png")}
+              alt=""
             />
             <span className="logo-title">Musicly</span>
           </div>

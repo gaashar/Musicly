@@ -11,6 +11,7 @@ export const Collections = () => {
           <img
             src={require("../../images/Underline_02.png")}
             className="underline"
+            alt=""
           ></img>
         </div>
         <p className="description">
@@ -22,16 +23,16 @@ export const Collections = () => {
       </div>
       <div className="instruments">
         <div className="instrument">
-          <img src={require("../../images/guitar.png")}></img>
+          <img src={require("../../images/guitar.png")} alt=""></img>
         </div>
         <div className="instrument">
-          <img src={require("../../images/guitar_keyboard.png")}></img>
+          <img src={require("../../images/guitar_keyboard.png")} alt=""></img>
         </div>
         <div className="instrument">
-          <img src={require("../../images/snare.png")}></img>
+          <img src={require("../../images/snare.png")} alt=""></img>
         </div>
         <div className="instrument">
-          <img src={require("../../images/speaker.png")}></img>
+          <img src={require("../../images/speaker.png")} alt=""></img>
         </div>
       </div>
     </section>

@@ -4,30 +4,34 @@ import "./footerBody.scss";
 export const FooterBody = () => {
   return (
     <footer className="reachout">
-      <img src={require("../../images/proBack_04.png")} className="bgImage" />
+      <img
+        src={require("../../images/proBack_04.png")}
+        className="bgImage"
+        alt=""
+      />
       <div className="container">
         <div className="contact-details">
           <div className="brand">
-            <img src={require("../../images/logo.png")} />
+            <img src={require("../../images/logo.png")} alt="" />
             <h4 className="name">Musicly</h4>
           </div>
           <div className="contact">
             <div className="phone">
-              <img src={require("../../images/phone.png")} />
+              <img src={require("../../images/phone.png")} alt="" />
               <div className="info">
                 <h5>Phone</h5>
                 <p>+41 - 654 - 763 -875</p>
               </div>
             </div>
             <div className="email">
-              <img src={require("../../images/email.png")} />
+              <img src={require("../../images/email.png")} alt="" />
               <div className="info">
                 <h5>Email</h5>
                 <p>hi@musiclystudio.co</p>
               </div>
             </div>
             <div className="studio-address">
-              <img src={require("../../images/address.png")} />
+              <img src={require("../../images/address.png")} alt="" />
               <div className="info">
                 <h5>Studio</h5>
                 <p>24, Guererro Street. UK - London (Studio 1) 24, </p>
@@ -37,16 +41,16 @@ export const FooterBody = () => {
           </div>
           <div className="social-media">
             <div className="discord">
-              <img src={require("../../images/discord.png")} />
+              <img src={require("../../images/discord.png")} alt="" />
             </div>
             <div className="instagram">
-              <img src={require("../../images/instagram.png")} />
+              <img src={require("../../images/instagram.png")} alt="" />
             </div>
             <div className="twitter">
-              <img src={require("../../images/twitter.png")} />
+              <img src={require("../../images/twitter.png")} alt="" />
             </div>
             <div className="facebook">
-              <img src={require("../../images/facebook.png")} />
+              <img src={require("../../images/facebook.png")} alt="" />
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ export const ProductDetails = () => {
           </p>
           <div className="card-group">
             <div className="card">
-              <img src={require("../../images/book.png")}></img>
+              <img src={require("../../images/book.png")} alt=""></img>
               <h4>Book and cancel anytime</h4>
               <p>
                 When you rent a musical instrument in our shop, you can decide
@@ -25,7 +25,7 @@ export const ProductDetails = () => {
               </p>
             </div>
             <div className="card">
-              <img src={require("../../images/rates.png")}></img>
+              <img src={require("../../images/rates.png")} alt=""></img>
               <h4>Very low rental rates</h4>
               <p>
                 We have a variety of rental items with good quality but believe
@@ -33,7 +33,7 @@ export const ProductDetails = () => {
               </p>
             </div>
             <div className="card">
-              <img src={require("../../images/shipping.png")}></img>
+              <img src={require("../../images/shipping.png")} alt=""></img>
               <h4>Free shipping anywhere</h4>
               <p>
                 If you have made a rental but you can't pick up your item at our

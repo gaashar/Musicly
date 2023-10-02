@@ -5,7 +5,11 @@ import { Button } from "../button";
 export const Banner = () => {
   return (
     <div className="banner">
-      <img className="background" src={require("../../images/proBack.png")} />
+      <img
+        className="background"
+        src={require("../../images/proBack.png")}
+        alt=""
+      />
       <section className="description">
         <div className="main">Let's create beautiful music with us</div>
         <div className="inner">
