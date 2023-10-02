@@ -11,8 +11,13 @@ export const ContactUs = () => {
           <img
             src={require("../../images/guitar_02.png")}
             className="image_1"
+            alt=""
           />
-          <img src={require("../../images/drum_02.png")} className="image_2" />
+          <img
+            src={require("../../images/drum_02.png")}
+            className="image_2"
+            alt=""
+          />
           <div className="instrument">
             <div className="description">
               <h3>Let's choose a musical instrument that you like right now</h3>

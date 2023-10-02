@@ -8,6 +8,7 @@ export const StudioMap = () => {
       <img
         src={require("../../images/proBack_03.png")}
         className="proback"
+        alt=""
       ></img>
       <div className="container">
         <div className="title">
@@ -21,19 +22,26 @@ export const StudioMap = () => {
           </p>
         </div>
         <div className="map-section">
-          <img className="mapBg" src={require("../../images/map.png")}></img>
+          <img
+            className="mapBg"
+            src={require("../../images/map.png")}
+            alt=""
+          ></img>
           <img
             className="arrow1"
             src={require("../../images/Arrow_01.png")}
+            alt=""
           ></img>
           <img
             className="arrow2"
             src={require("../../images/Arrow_09.png")}
+            alt=""
           ></img>
           <div className="map-card card-position_1">
             <img
               src={require("../../images/address_2.png")}
               className="studio-image"
+              alt=""
             ></img>
             <h4>Musicly Studio - Studio 2</h4>
             <p>24, Pink Triangle Park - London</p>
@@ -43,6 +51,7 @@ export const StudioMap = () => {
             <img
               src={require("../../images/address_1.png")}
               className="studio-image"
+              alt=""
             ></img>
             <h4>Musicly Studio - Studio 1</h4>
             <p>24, Guererro Street. UK - London</p>
