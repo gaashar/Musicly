@@ -5,7 +5,6 @@
     margin: auto;
     background: url("../../images/contactUsBg.png") #a68cf1;
     width: 65%;
-    height: 380px;
     padding: 3rem;
     position: relative;
     bottom: -4.6rem;
@@ -44,6 +43,28 @@
           font-size: smaller;
           opacity: 0.6;
           font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contactUs {
+    .container {
+      width: 90%;
+      .image_1,
+      .image_2 {
+        display: none;
+      }
+      .instrument {
+        margin: unset;
+        .description {
+          width: 100%;
+          h3 {
+            margin: 0;
+            font-size: 2rem;
+          }
         }
       }
     }

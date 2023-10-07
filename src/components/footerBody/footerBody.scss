@@ -14,10 +14,9 @@
     z-index: 1;
     .contact-details {
       display: flex;
-      height: 200px;
       .brand {
         flex-grow: 2;
-        height: 200px;
+        padding: 1rem;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -99,6 +98,7 @@
     }
     .copyright-content {
       height: 4.7rem;
+      margin-top: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -116,6 +116,49 @@
         .policy {
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .reachout {
+    .container {
+      width: 75%;
+      .contact-details {
+        flex-direction: column;
+        align-items: center;
+        .brand {
+          justify-content: center;
+          align-items: center;
+        }
+        .contact {
+          margin-top: 1rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .mobile-view {
+            flex-direction: column;
+            align-items: center;
+            .image-container {
+              margin-left: 0.8rem;
+            }
+            .info {
+              text-align: center;
+              p {
+                margin-top: 0.25rem;
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+
+        .social-media {
+          width: 50%;
+        }
+      }
+      .copyright-content {
+        flex-direction: column;
       }
     }
   }

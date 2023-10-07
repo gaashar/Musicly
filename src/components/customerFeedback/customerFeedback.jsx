@@ -3,7 +3,7 @@ import "./customerFeedback.scss";
 
 export const CustomerFeedback = () => {
   return (
-    <section className="feedback">
+    <section id="click_testimonial" className="feedback">
       <div className="container">
         <img src={require("../../images/quote.png")} className="quote" alt="" />
         <div className="title">
@@ -85,17 +85,16 @@ export const CustomerFeedback = () => {
               </div>
             </div>
           </div>
-          <div className="scroller">
+          {/* <div className="scroller">
             <div className="items">
               <div className="item">
                 <img src={require("../../images/rightArrow.png")} alt="" />
               </div>
-              <div className="space"></div>
               <div className="item">
                 <img src={require("../../images/leftArrow.png")} alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

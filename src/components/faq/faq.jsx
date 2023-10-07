@@ -13,7 +13,7 @@ export const Faq = () => {
     return setSelected(selectedIndex);
   };
   return (
-    <section className="faq">
+    <section id="click_faq" className="faq">
       <div className="container">
         <h2>
           <img

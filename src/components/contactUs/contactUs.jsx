@@ -6,7 +6,7 @@ import "./contactUs.scss";
 export const ContactUs = () => {
   return (
     <>
-      <section className="contactUs">
+      <section id="click_contact" className="contactUs">
         <div className="container">
           <img
             src={require("../../images/guitar_02.png")}

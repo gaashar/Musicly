@@ -1,22 +1,22 @@
 .studio {
-  height: 850px;
   background: #1c252c;
   position: relative;
   margin: auto;
+  padding: 4rem 1rem;
   .proback {
-    height: 850px;
-    width: 80%;
-    position: relative;
-    left: 8%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
     z-index: 1;
+    object-fit: cover;
   }
   .container {
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 0;
-    left: 0;
     z-index: 3;
-    margin: 4rem 21rem;
+    max-width: 1300px;
+    margin: auto;
     .title {
       h2 {
         font-weight: 700;
@@ -81,6 +81,23 @@
         top: 2.9rem;
         right: 11.8rem;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .mapBg,
+    .arrow1,
+    .arrow2 {
+      display: none;
+    }
+    .map-card {
+      position: unset !important;
+      margin: 0 2rem 2rem 2rem;
     }
   }
 }

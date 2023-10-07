@@ -16,26 +16,34 @@ export const FooterBody = () => {
             <h4 className="name">Musicly</h4>
           </div>
           <div className="contact">
-            <div className="phone">
-              <img src={require("../../images/phone.png")} alt="" />
+            <div className="phone mobile-view">
+              <div className="image-container">
+                <img src={require("../../images/phone.png")} alt="" />
+              </div>
               <div className="info">
                 <h5>Phone</h5>
                 <p>+41 - 654 - 763 -875</p>
               </div>
             </div>
-            <div className="email">
-              <img src={require("../../images/email.png")} alt="" />
+            <div className="email mobile-view">
+              <div className="image-container">
+                <img src={require("../../images/email.png")} alt="" />
+              </div>
               <div className="info">
                 <h5>Email</h5>
                 <p>hi@musiclystudio.co</p>
               </div>
             </div>
-            <div className="studio-address">
-              <img src={require("../../images/address.png")} alt="" />
+            <div className="studio-address mobile-view">
+              <div className="image-container">
+                <img src={require("../../images/address.png")} alt="" />
+              </div>
               <div className="info">
                 <h5>Studio</h5>
-                <p>24, Guererro Street. UK - London (Studio 1) 24, </p>
-                <p>Pink Triangle Park - London (Studio 2)</p>
+                <p>
+                  <span>24, Guererro Street. UK - London (Studio 1) 24, </span>
+                  <span>Pink Triangle Park - London (Studio 2)</span>
+                </p>
               </div>
             </div>
           </div>

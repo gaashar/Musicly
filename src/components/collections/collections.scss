@@ -36,27 +36,58 @@
   }
   .instruments {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 85%;
+    width: 95%;
     margin: auto;
+    padding-bottom: 3rem;
     .instrument {
-      margin: auto;
-      margin-left: 1rem;
+      margin: 1rem;
       box-shadow: 50px 40px 200px 0 rgba(0, 0, 0, 0.1);
-      padding: 2rem;
+      padding: 3rem 2rem;
       border-radius: 20px;
-      min-height: 25rem;
+      position: relative;
+      z-index: 3;
+      height: 25rem;
       img {
         max-width: 14rem;
+        position: relative;
+        z-index: 1;
       }
     }
     .instrument:hover {
       background: url("../../images/proBack_02.png") #a68cf1;
       object-fit: cover;
+
+      .instrument-banner {
+        bottom: 0.5rem;
+        display: flex;
+        // visibility: visible;
+        // transform: scale(1, 1);
+      }
     }
-    .instrument:nth-child(even) {
-      margin-bottom: 8rem;
+    .instrument:nth-child(odd) {
+      margin-top: 4.5rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .collections .container {
+    flex-direction: column;
+    align-items: center;
+    .title {
+      text-align: center;
+      width: unset;
+      height: unset;
+      .underline {
+        display: none;
+      }
+    }
+    .description {
+      width: 90%;
+      text-align: center;
+      margin-bottom: unset;
     }
   }
 }
