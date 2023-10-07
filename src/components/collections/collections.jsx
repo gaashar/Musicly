@@ -1,10 +1,12 @@
 import React from "react";
 import "./collections.scss";
 import { Button } from "../button";
+import { InstrumentBanner } from "./InstrumentBanner";
+import { instruments } from "./instruments";
 
 export const Collections = () => {
   return (
-    <section className="collections">
+    <section id="click_collection" className="collections">
       <div className="container">
         <div className="title">
           Our best <span className="highlight">collections</span>
@@ -22,18 +24,14 @@ export const Collections = () => {
         <Button text="See more items" seeMoreClass />
       </div>
       <div className="instruments">
-        <div className="instrument">
-          <img src={require("../../images/guitar.png")} alt=""></img>
-        </div>
-        <div className="instrument">
-          <img src={require("../../images/guitar_keyboard.png")} alt=""></img>
-        </div>
-        <div className="instrument">
-          <img src={require("../../images/snare.png")} alt=""></img>
-        </div>
-        <div className="instrument">
-          <img src={require("../../images/speaker.png")} alt=""></img>
-        </div>
+        {instruments.map(({ key, image, name, quantity }) => {
+          return (
+            <div className="instrument" key={key}>
+              <img src={image} alt={key}></img>
+              <InstrumentBanner name={name} quantity={quantity} />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

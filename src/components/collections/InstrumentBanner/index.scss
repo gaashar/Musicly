@@ -1,0 +1,28 @@
+.instrument-banner {
+  background: white;
+  border-radius: 1rem;
+  position: absolute;
+  display: flex;
+  bottom: -80%;
+  left: 50%;
+  z-index: 2;
+  padding: 1rem;
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  display: none;
+  // visibility: hidden;
+  h3 {
+    color: black;
+    margin: 0;
+  }
+  h5 {
+    color: #9f9f9f;
+    margin: 0;
+    margin-top: 0.25rem;
+  }
+  button {
+  }
+}

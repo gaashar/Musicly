@@ -4,7 +4,7 @@ import "./studioMap.scss";
 
 export const StudioMap = () => {
   return (
-    <section className="studio">
+    <section id="click_studio" className="studio">
       <img
         src={require("../../images/proBack_03.png")}
         className="proback"

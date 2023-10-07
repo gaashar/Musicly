@@ -1,13 +1,13 @@
 .product-details-card {
-  height: 580px;
-  width: 72rem;
+  width: 70%;
   background: #fff;
   margin: auto;
   position: relative;
-  top: -8.2rem;
+  top: -8rem;
   border-radius: 2.3rem;
+  z-index: 5;
   .container {
-    padding: 4.5rem;
+    padding: 4.5rem 4.5rem 0 4.5rem;
     text-align: center;
     .pd-title {
       margin-bottom: 1.5rem;
@@ -29,7 +29,8 @@
     }
     .card-group {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
       .card {
         width: 350px;
         margin: 0 1rem;
@@ -52,6 +53,21 @@
       .card:hover {
         box-shadow: 50px 40px 200px 0 rgb(0 0 0 / 10%);
       }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .product-details-card {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .product-details-card {
+    width: 90%;
+    .container .pd-description {
+      padding: unset;
+      margin: unset;
     }
   }
 }
