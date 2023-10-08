@@ -86,18 +86,37 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .map-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .mapBg,
-    .arrow1,
-    .arrow2 {
-      display: none;
+  .studio {
+    .container {
+      .title {
+        h2 {
+          font-size: 2.8rem;
+        }
+        .details {
+          font-size: 0.8rem;
+          margin: 2.5rem auto;
+        }
+      }
     }
-    .map-card {
-      position: unset !important;
-      margin: 0 2rem 2rem 2rem;
+
+    .map-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .mapBg,
+      .arrow1,
+      .arrow2 {
+        display: none;
+      }
+      .map-card {
+        position: unset !important;
+        margin: 0 2rem 2rem 2rem;
+        h4,
+        p,
+        .getDirection {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 }

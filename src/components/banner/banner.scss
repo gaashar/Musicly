@@ -59,11 +59,11 @@
           justify-content: space-between;
           background: #fff;
           border-radius: 16px;
-          padding: 12px;
+          padding: 0.75rem;
           width: 85%;
           .product-detail {
             position: relative;
-            padding: 12px;
+            padding: 0.75rem;
             h5 {
               margin: 0;
               color: #9f9f9f;
@@ -82,6 +82,11 @@
             width: 1px;
             height: 34px;
             background: #d3d3d3;
+            margin: 0 1rem;
+          }
+
+          .product-detail:last-child::after {
+            width: 0;
           }
         }
       }
@@ -99,7 +104,7 @@
 
 @media (max-width: 1000px) {
   .banner {
-    height: 45rem;
+    padding-top: 8rem;
     .container {
       .image-bg-container {
         right: 5rem;
@@ -113,6 +118,62 @@
           flex-direction: column;
           align-items: center;
           text-align: center;
+          left: 0;
+          .main {
+            font-size: 3rem;
+          }
+          .inner {
+            font-size: 1rem;
+          }
+          .search-product-card {
+            flex-flow: wrap;
+            padding: 0;
+            .product-detail {
+              flex: 0 0 45%;
+              h5 {
+                font-size: 0.75rem;
+              }
+              h4 {
+                font-size: 0.9rem;
+              }
+            }
+            .product-detail:nth-child(even)::after {
+              width: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .banner {
+    height: 58rem;
+    padding-top: 5rem;
+    .container {
+      .description {
+        padding: 0;
+        .description-container {
+          .search-product-card {
+            width: 100%;
+            .product-detail {
+              padding: 0.5rem;
+              h5 {
+                font-size: 0.6rem;
+              }
+              h4 {
+                font-size: 0.65rem;
+              }
+              search {
+                padding: 0.75rem 0.5rem;
+                margin: 0;
+              }
+            }
+            .product-detail::after {
+              top: 8px;
+            }
+          }
         }
       }
     }

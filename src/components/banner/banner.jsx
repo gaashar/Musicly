@@ -42,7 +42,9 @@ export const Banner = () => {
                 <h5>Date</h5>
                 <h4>11/01/2022</h4>
               </div>
-              <Button text="Search" searchClass />
+              <div className="product-detail">
+                <Button text="Search" searchClass />
+              </div>
             </div>
           </div>
         </section>

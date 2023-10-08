@@ -14,6 +14,5 @@ export const Button = ({
   if (seeMoreClass) addClass = addClass.concat(" seeMore");
   if (getDirectionClass) addClass = addClass.concat(" getDirection");
   if (contactUsClass) addClass = addClass.concat(" contactUsBtn");
-  console.log("🚀 ~ file: button.jsx:16 ~ addClass:", addClass);
   return <button className={addClass}>{children ? children : text}</button>;
 };

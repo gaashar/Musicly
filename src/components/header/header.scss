@@ -23,6 +23,10 @@
         font-weight: 600;
       }
     }
+    .hamburger-menu,
+    .social-media {
+      display: none;
+    }
   }
   .nav-items {
     display: flex;
@@ -37,6 +41,91 @@
         text-decoration: none;
         list-style: none;
         color: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .container {
+      padding: 1rem 0;
+      justify-content: space-between;
+      .nav-items,
+      .contact-link {
+        display: none;
+      }
+
+      .hamburger-menu {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        z-index: 99;
+        border-radius: 50%;
+        background: hsla(0, 0%, 100%, 0.1411764705882353);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 8px;
+        .bar {
+          display: inline-block;
+          width: 21px;
+          height: 2px;
+          background-color: #fff;
+          transition: 0.5s;
+        }
+      }
+      .show-menu {
+        .bar:first-child {
+          position: absolute;
+          transform: rotate(45deg);
+        }
+        .bar:nth-child(2) {
+          display: none;
+        }
+        .bar:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .menu-open {
+        position: fixed;
+        left: 0;
+        top: 68px;
+        background-color: #a68cf1;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 100;
+
+        .social-media {
+          flex-grow: 1;
+          display: flex;
+          height: 2.6rem;
+          justify-content: space-around;
+          width: 50%;
+          margin: 2rem auto;
+          .background {
+            background: #fff;
+            padding: 0.6rem;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+        .nav-items {
+          display: unset;
+          // border-bottom: 0.07rem solid hsla(0, 0%, 100%, 0.1);
+          .nav-item {
+            padding: 1.5rem 3rem;
+            a {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .contact-link {
+          display: unset;
+        }
       }
     }
   }
