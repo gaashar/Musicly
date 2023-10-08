@@ -1,5 +1,5 @@
 .product-details-card {
-  width: 70%;
+  width: 80%;
   background: #fff;
   margin: auto;
   position: relative;
@@ -57,11 +57,6 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .product-details-card {
-    width: 80%;
-  }
-}
 @media (max-width: 1200px) {
   .product-details-card {
     width: 90%;
