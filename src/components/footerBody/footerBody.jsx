@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialMedia } from "./socialMedia/socialMedia";
 import "./footerBody.scss";
 
 export const FooterBody = () => {
@@ -47,20 +48,7 @@ export const FooterBody = () => {
               </div>
             </div>
           </div>
-          <div className="social-media">
-            <div className="discord">
-              <img src={require("../../images/discord.png")} alt="" />
-            </div>
-            <div className="instagram">
-              <img src={require("../../images/instagram.png")} alt="" />
-            </div>
-            <div className="twitter">
-              <img src={require("../../images/twitter.png")} alt="" />
-            </div>
-            <div className="facebook">
-              <img src={require("../../images/facebook.png")} alt="" />
-            </div>
-          </div>
+          <SocialMedia />
         </div>
         <div className="copyright-content">
           <p>Copyright © 2021 Musicly - All Right Reserved</p>

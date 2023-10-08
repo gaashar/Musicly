@@ -73,5 +73,21 @@
 @media (max-width: 1200px) {
   .faq {
     padding: 0 0.75rem;
+    .container {
+      h2 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 0.85rem;
+      }
+      .list-items .wrapper {
+        .question {
+          font-size: 0.9rem;
+        }
+        .answer {
+          font-size: 0.85rem;
+        }
+      }
+    }
   }
 }

@@ -101,7 +101,7 @@
 @media (max-width: 1200px) {
   .feedback {
     .container {
-      width: 90%;
+      width: 100%;
       padding: 3rem 1rem;
       .quote {
         display: none;
@@ -110,34 +110,51 @@
         flex-direction: column;
         text-align: center;
         h2 {
-          font-size: 2rem;
-          line-height: 2.5rem;
+          font-size: 2.8rem;
+          // line-height: 2.5rem;
         }
         p {
           width: 100%;
           padding-right: 0;
           margin-bottom: 0;
+          font-size: 0.8rem;
+        }
+      }
+      .customers {
+        // flex-direction: column;
+        width: 75%;
+        margin: auto;
+        .list {
+          flex-direction: column;
+          .customer {
+            .review {
+              font-size: 0.8rem;
+            }
+            .name .details {
+              h4,
+              p {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+        .scroller .items {
+          flex-direction: row !important;
+          justify-content: center;
+          .item:nth-child(1) {
+            order: 2;
+          }
+          .item:nth-child(2) {
+            order: 1;
+          }
         }
       }
     }
-    padding: 3rem;
-    .customers {
-      // flex-direction: column;
-      width: 75%;
-      margin: auto;
-      .list {
-        flex-direction: column;
-      }
-      .scroller .items {
-        flex-direction: row !important;
-        justify-content: center;
-        .item:nth-child(1) {
-          order: 2;
-        }
-        .item:nth-child(2) {
-          order: 1;
-        }
-      }
-    }
+  }
+}
+
+@media (max-width: 500px) {
+  .feedback {
+    padding: 0;
   }
 }

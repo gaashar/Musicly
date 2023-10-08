@@ -1,5 +1,4 @@
 import React from "react";
-import { Collections } from "../collections/collections";
 import "./productDetails.scss";
 
 export const ProductDetails = () => {
