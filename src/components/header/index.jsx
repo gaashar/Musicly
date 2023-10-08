@@ -32,50 +32,50 @@ export const Header = () => {
             </Link>
           </div>
           <div
-            className={isMenuOpen ? "menu-open" : "menu-close"}
-            onClick={toggleMenu}
+            className={isMenuOpen ? "menu-open" : "menu-close no-menu-nav"}
+            // onClick={toggleMenu}
           >
             <ul className="nav-items">
-              <li className="nav-item" onClick={toggleMenu}>
+              <li className="nav-item">
                 <Link
                   to="click_collection"
                   smooth={true}
                   offset={-120}
                   duration={800}
-                  onClick={toggleMenu}
+                  // onClick={toggleMenu}
                 >
                   COLLECTIONS
                 </Link>
               </li>
-              <li className="nav-item" onClick={toggleMenu}>
+              <li className="nav-item">
                 <Link
                   to="click_studio"
                   smooth={true}
                   offset={-80}
                   duration={800}
-                  onClick={toggleMenu}
+                  // onClick={toggleMenu}
                 >
                   STUDIO
                 </Link>
               </li>
-              <li className="nav-item" onClick={toggleMenu}>
+              <li className="nav-item">
                 <Link
                   to="click_testimonial"
                   smooth={true}
                   offset={-80}
                   duration={800}
-                  onClick={toggleMenu}
+                  // onClick={toggleMenu}
                 >
                   TESTIMONIAL
                 </Link>
               </li>
-              <li className="nav-item" onClick={toggleMenu}>
+              <li className="nav-item">
                 <Link
                   to="click_faq"
                   smooth={true}
                   offset={-80}
                   duration={800}
-                  onClick={toggleMenu}
+                  // onClick={toggleMenu}
                 >
                   FAQ
                 </Link>
@@ -87,7 +87,7 @@ export const Header = () => {
               smooth={true}
               offset={-80}
               duration={800}
-              onClick={toggleMenu}
+              // onClick={toggleMenu}
             >
               <Button text="Contact Us" />
             </Link>
